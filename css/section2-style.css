@@ -1,0 +1,103 @@
+.recommend-tour-wrap{
+    display: flex;
+    padding: 150px 0;
+    font-family: 'JalnanGothic', sans-serif;
+}
+.recommend-left{
+    width: 30%;
+    position: relative;
+    padding: 180px 60px 0 0;
+}
+.recommend-left>.king-kong{
+    img{
+        width:80%;        
+    }
+    
+}
+.recommend-left>.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ↑ 정가운데 보내기 */
+    width: 276px;
+    height: 227px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/3d-spch-bubble.png);
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.recommend-right{
+    width: 70%;
+    padding-top: 100px;
+    overflow: hidden;
+    /* background-color: pink; */
+}
+.recommend-list{
+    display: flex;
+    width: 135%;
+}
+.recommend-list>li{
+    padding:20px;
+}
+.recommend-list>li>a{
+    position: relative;
+}
+.recommend-list>li .back{
+    background: #e83426;
+    color: white;
+    padding: 15px 50px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: -10px;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    font-family: 'Jalnan',sans-serif;
+}
+.recommend-list>li .back::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    /* background: blue; */
+    position: absolute;
+    left: 50%;
+    bottom: -26px;
+    transform: translateX(-50%);
+    border-top: 24px solid #e83426;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;    
+}
+.recommend-list .back::after{
+
+}
+.recommend-list>li:nth-child(2n+1) .back{
+    top: -90px;
+}
+.recommend-list>li:nth-child(2n) .back{
+    top: -10px;
+}
+.recommend-list .front{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.recommend-list .front>.text-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 30px;
+    font-size: 40px;
+}
+.recommend-list>.reco2 .front>.text-box,
+.recommend-list>.reco3 .front>.text-box{
+    color: white;
+}
+.recommend-list>.leco5 .front>.text-box{
+    color: white;
+}

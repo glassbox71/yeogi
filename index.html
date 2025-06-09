@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여기어때</title>
+  <link rel="shortcut icon" href="./images/favicon_png_32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/section01-hero-main-slide.css">
+  <link rel="stylesheet" href="./css/section2-style.css">
+  <link rel="stylesheet" href="./css/section3-style.css">
+  <link rel="stylesheet" href="./css/footer-2.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <!-- <script src="./js/header-hero-main.js"></script> -->
+  <script src="./js/main.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <div class="main-menu-wrap">
+        <h1 class="logo"><a href="index.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+        <ul class="main-menu-list">
+          <li>
+            <!-- 캐리어 이미지 css에서 ::before{background-image : url()로 적용예정} -->
+            <a href="./hw-sub.html">추천여행지</a>
+            <ul class="sub-menu-list">
+              <li><a href="./hw-sub.html">국내여행지</a></li>
+              <li><a href="./hw-sub.html">해외여행지</a></li>
+              <li><a href="./hw-sub.html">인기여행기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">항공</a>
+            <ul class="sub-menu-list">
+              <li><a href="#">국내 편</a></li>
+              <li><a href="#">해외 편</a></li>
+              <li><a href="#">항공 + 숙소</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub-lodging.html">숙소</a>
+            <ul class="sub-menu-list">
+              <li><a href="./sub-lodging.html">국내숙소</a></li>
+              <li><a href="./sub-lodging.html">해외숙소</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">문화생활어때</a>
+            <ul class="sub-menu-list">
+              <li><a href="#">공간대여</a></li>
+              <li><a href="#">레저티켓</a></li>
+              <li><a href="#">렌트카</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./sub-reserve.html">예약</a>
+            <ul class="sub-menu-list">
+              <li><a href="./sub-reserve.html">마이 예약</a></li>
+              <li><a href="./sub-reserve.html">비회원예약조회</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">소식</a>
+            <ul class="sub-menu-list">
+              <li><a href="#">공지 </a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="gnb-icon-wrap">
+          <ul class="gnb-icon">
+            <!-- blind css 적용시 position:absolute top: -99999px로 텍스트 숨기기 -->
+            <li><a href="./sub-login.html" class="user"></a></li>
+            <li><a href="#" class="heart"></a></li>
+            <li><a href="#" class="contact"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-wrap swiper">
+    <ul class="video-wrap swiper-wrapper">
+      <!-- controls="controls" 삭제예정/  autoplay muted loop -->
+      <li class="swiper-slide"><video src="./images/hero-slide-01.mp4" controls="controls" autoplay muted loop></video>
+      </li>
+      <li class="swiper-slide"><video src="./images/hero-slide-02.mp4" controls="controls" autoplay muted loop></video>
+      </li>
+      <li class="swiper-slide"><video src="./images/hero-slide-03.mp4" controls="controls" autoplay muted loop></video>
+      </li>
+    </ul>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+    <div class="main-title-wrap">
+      <h2 class="main-title">국내부터 해외까지 <br> 여행할때<span> 여기어때</span></h2>
+      <div class="search-wrap">
+        <div class="carri-icon"></div>
+        <!-- placeholder 속성은 사용자가 아무 텍스트도 입력하지 않았을 때만 표시 -->
+        <label>
+          <div class="search-icon"></div>
+          <input type="text" placeholder="여행지나 숙소를 검색해보세요">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-wrap"></div>
+  <main>
+    <section id="e-main-slide-wrap">
+      <div class="e-bg"></div>
+      <div class="e-inner">
+        <div class="e-main-slide">
+          <h2 class="blind">메인슬라이드</h2>
+          <div class="e-text-box-wrap">
+            <ul class="e-text-box">
+              <li>
+                <p class="e-sub">로그인 하면 멤버십 할인!</p>
+                <p class="e-title">회원가입만 해도 받는<br>엘리트 멤버십 혜택</p>
+                <a href="./sub-reserve.html">자세히보기</a>
+              </li>
+              <li>
+                <p class="e-sub">단 4일! 인기호텔 최대 할인</p>
+                <p class="e-title">베스트 호텔딜<br>최대 78% 특가</p>
+                <a href="./sub-reserve.html">자세히보기</a>
+              </li>
+              <li>
+                <p class="e-sub">연말파티 지금부터 준비해요!</p>
+                <p class="e-title">연말 호캉스<br>최대 5만원 할인</p>
+                <a href="./sub-reserve.html">자세히보기</a>
+              </li>
+              <li>
+                <p class="e-sub">나의 여행 스타일로 찾아보는</p>
+                <p class="e-title">여행부캐<br>테스트 시작</p>
+                <a href="./sub-reserve.html">자세히보기</a>
+              </li>
+              <li>
+                <p class="e-sub">미리 받는 새해 선물 도착!</p>
+                <p class="e-title">매일 100명<br>선착순 20% 쿠폰</p>
+                <a href="./sub-reserve.html">자세히보기</a>
+              </li>
+            </ul>
+            <div class="e-pager-wrap">
+              <div class="e-line"></div>
+              <p class="e-pager"><strong class="num">0<i>0</i></strong>/
+                <span class="total">0<i>5</i></span></p>
+              <ul class="e-arrow-btn">
+                <li class="e-left-arrow"><a href="#void"></a></li>
+                <li class="e-playStop"><a href="#void"></a></li>
+                <li class="e-right-arrow"><a href="#void"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="e-img-box-wrap">
+            <ul class="e-img-box">
+              <li>
+                <a href="#"><img src="./images/e-kong.jpg" alt="콩이"></a>
+                <div class="img-pos"><img src="./images/e-elite.png" alt="라벨이미지"></div>
+              </li>
+              <li><a href="#"><img src="./images/e-hotel3.png" alt="호텔"></a></li>
+              <li><a href="#"><img src="./images/e-year-end.png" alt="연말파티"></a></li>
+              <li><a href="#"><img src="./images/e-test.png" alt="여행캐릭터테스트"></a></li>
+              <li><a href="#"><img src="./images/e-coupon.png" alt="할인쿠폰"></a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recommend-tour-wrap">
+      <div class="recommend-left">
+        <p class="king-kong"><img src="./images/kong.jpg" alt=""></p>
+        <p class="bubble">어디갈지 고민이<br>라면! 여기어때?</p>
+      </div>
+      <div class="recommend-right">
+        <ul class="recommend-list">
+          <!-- li*4>a[href="#"]>div.back+div.front>p.img-box+p.text-box -->
+          <li class="reco1">
+            <a href="./hw-sub.html">
+              <div class="back">이번 겨울, 나만의 힐링 포인트 찾기!</div>
+              <div class="front">
+                <p class="img-box"><img src="./images/reco-gangneung.png" alt=""></p>
+                <p class="text-box">강릉으로 여행어때?</p>
+              </div>
+            </a>
+          </li>
+          <li class="reco2">
+            <a href="./hw-sub.html">
+              <div class="back">여유와 품격의 경주, 호텔에서 시작하세요.</div>
+              <div class="front">
+                <p class="img-box"><img src="./images/reco-Gyeongju.png" alt=""></p>
+                <p class="text-box">특가로 저렴하게 여행가기</p>
+              </div>
+            </a>
+          </li>
+          <li class="reco3">
+            <a href="./hw-sub.html">
+              <div class="back">독체 빌라의 여유, 제주 애월의 감성을 더하다.</div>
+              <div class="front">
+                <p class="img-box"><img src="./images/reco-jeju.png" alt=""></p>
+                <p class="text-box">한번가면 또 가고싶은</p>
+              </div>
+            </a>
+          </li>
+          <li class="leco4">
+            <a href="./hw-sub.html">
+              <div class="back">편안한 모험의 만남, 글램핑으로 떠나자.</div>
+              <div class="front">
+                <p class="img-box"><img src="./images/reco-Gapyeong.png" alt=""></p>
+                <p class="text-box">힐링의 완성은?</p>
+              </div>
+            </a>
+          </li>
+          <li class="leco5">
+            <a href="./hw-sub.html">
+              <div class="back">내일을 더 기대하게 만드는 오늘, 펜션에서 완성되다.</div>
+              <div class="front">
+                <p class="img-box"><img src="./images/reco-stay.png" alt=""></p>
+                <p class="text-box">이번 주 HOT 인기 펜션은?</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="best-lodging-wrap">
+      <div class="best-wrap">
+        <div class="best-left swiper">
+          <ul class="big-img swiper-wrapper">
+            <li class="swiper-slide"><img src="./images/best-black.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-fullvilla.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-glamping.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-hotel.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-motel.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-home.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="./images/best-guest.jpg" alt=""></li>
+          </ul>
+        </div>
+        <div class="best-right">
+          <div class="best-fix">
+            <h3>숙소별 BEST</h3>
+            <img src="./images/icon-best.png" alt="">
+          </div>
+          <div class="wh-fix">
+            <div class="top"></div>
+            <div class="bottom"></div>
+          </div>
+          <div class="swiper best">
+            <ul class="best-list swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-black-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>프리미엄 블랙</span></div>
+                    <div class="b-name">
+                      <p class="b-title">힐튼 경주</p>
+                      <p class="site"><span>경주시</span> · 보문관광단지 부근</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.5</p>
+                        </div>
+                        <span>7,423명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>158,400</strong>원</p>
+                        <p class="cost">399,300원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-fullvilla-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>펜션·풀빌라</span></div>
+                    <div class="b-name">
+                      <p class="b-title">가평 풀빌라&글램핑랜드</p>
+                      <p class="site"><span>가평군</span> · 쁘띠프랑스 차량 11분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.9</p>
+                        </div>
+                        <span>1,179명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>183,350</strong>원</p>
+                        <p class="cost">198,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-glamping-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>캠핑·글램핑</span></div>
+                    <div class="b-name">
+                      <p class="b-title">가평 글램스테이 글램핑 카라반 펜션</p>
+                      <p class="site"><span>가평군</span> · 연인산 차량 11분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.9</p>
+                        </div>
+                        <span>161명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>75,050</strong>원</p>
+                        <p class="cost">79,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-hotel-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>호텔·리조트</span></div>
+                    <div class="b-name">
+                      <p class="b-title">★당일특가★ 세인트존스 호텔</p>
+                      <p class="site"><span>강릉시</span> · 강릉 강문해변 앞</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.1</p>
+                        </div>
+                        <span>8,215명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>124,080</strong>원</p>
+                        <p class="cost">363,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-motel-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>모텔</span></div>
+                    <div class="b-name">
+                      <p class="b-title">구월 호텔반월</p>
+                      <p class="site">인천터미널역 도보 14분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.5</p>
+                        </div>
+                        <span>11,249명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>40,500</strong>원</p>
+                        <p class="cost">45,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-honme-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>홈&빌라</span></div>
+                    <div class="b-name">
+                      <p class="b-title">부산30분,자쿠지,바베큐,노래방과 오션뷰 시골마을 독채 | 거제 띠아모</p>
+                      <p class="site"><span>거제시</span> · 매미성 차량 6분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">10</p>
+                        </div>
+                        <span>65명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>219,000</strong>원</p>
+                        <p class="cost">224,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="./sub-lodging.html">
+                  <div class="small-img"><img src="./images/best-guest-in.jpg" alt=""></div>
+                  <div class="best-text">
+                    <div class="b-type"><span>게하·한옥</span></div>
+                    <div class="b-name">
+                      <p class="b-title">전주 소소한 한옥</p>
+                      <p class="site"><span>전주시</span> · 전주한옥마을 내 위치</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">10</p>
+                        </div>
+                        <span>223명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>49,000</strong>원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <div class="background"><a href=""><img src="./images/footer-bg-pc.jpg" alt=""></a></div> -->
+    <div class="ft-title-wrap">
+      <div class="qr"><img src="images/QR.png" alt="QR Code"></div>
+      <div class="ft-text-box">
+        <h3 class="ft-title">앱 다운로드 받고<br>더 많은 혜택 받으세요</h3>
+        <p class="ft-text">국내/해외 숙소부터 항공권까지<br>실시간 최저가로 예약하세요.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom-wrap">
+
+      <div class="son-wrap">
+        <a href="#"><img src="./images/footer-son.png" alt=""></a>
+      </div>
+      <div class="ft-info">
+        <div class="ft-top">
+          <address>
+            <p>(주)여기어때컴퍼니<br>
+              주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224
+              사업자정보확인<br>
+              전자우편주소 : help@yeogi.com | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호<br>
+              전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br>
+              (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은<br>
+              각 판매자에게 있습니다.</p>
+          </address>
+        </div>
+        <div class="ft-bottom">
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">소비자 분쟁해결 기준</a></li>
+            <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-copy">
+          <p class="copy">Copyright GC COMPANY Corp. All rights reserved.</p>
+          <ul class="sns-list">
+            <li><img src="./images/icon-instagram.png" alt="instagram"></li>
+            <li><img src="./images/icon-youtube.png" alt="youtube"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="helpdesk">
+        <div class="img-container">
+          <div class="img-box">
+
+            <div class="text-box">
+              <p class="list-title">고객센터</p>
+              <p class="text">고객행복센터</p>
+              <p class="time">오전 9시 ~ <br>새벽 3시 운영</p>
+              <div class="kind">
+                <span><img src="./images/icon-call.png" alt="call"></span>
+                <span>1670-6250</span>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+
+            <div class="text-box">
+              <p class="list-title">고객센터</p>
+              <p class="text">카카오톡 문의</p>
+              <p class="time">24시간 운영</p>
+              <div class="kind">
+                <span><img src="./images/icon-chat.png" alt="chat"></span>
+                <span>카카오톡 문의</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".best", {
+      direction: "vertical",
+      slidesPerView: 2,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3000
+      },
+    });
+    var swiper = new Swiper(".best-left", {
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 3000
+      }
+    });
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".hero-wrap", {
+      // slidesPerView:1,
+      spaceBetween:0,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 16300,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script> 
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* 3.best-lodging-wrap*/
+.best-lodging-wrap {
+  position: relative;
+  height: 100%;
+  margin: 100px 0;
+}
+
+.best-wrap {
+  height: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.best-left {
+  width: 800px;
+}
+
+.best-left .big-img {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.best-right {
+  position: relative;
+  width: calc(100% - 800px);
+
+  .best-list {
+     
+
+    li {
+      width: 100%;
+      display: block;
+
+      a {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+
+        .small-img {
+          background-color: aqua;
+          width: 400px;
+          height: 400px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .best-text {
+          /* background-color: aqua; */
+          margin: 60px;
+          width: 50%;
+          text-align: left;
+
+          .b-type {
+            margin-bottom: 40px;
+
+            >span {
+              background-color: #e83427;
+              padding: 5px 20px;
+              border-radius: 50px 50px 0 50px;
+              color: white;
+              font-weight: 700;
+            }
+          }
+
+          .b-name {
+            margin-bottom: 40px;
+            line-height: 1.8em;
+
+            .b-title {
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 1.3em;
+            }
+
+            .site {
+              color: #aaa;
+
+              span {
+                color: #666;
+              }
+            }
+
+            .grade {
+              display: flex;
+              gap: 10px;
+
+              .star {
+                display: flex;
+                gap: 1px;
+                background-color: #ffbf00;
+                border-radius: 20px;
+                padding: 1px 8px;
+                align-items: center;
+
+                .star-img {
+                  display: block;
+                  width: 16px;
+                  height: 16px;
+
+                  background-image: url(../images/icon-star.svg);
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                }
+
+                .score {
+                  font-weight: 700;
+                  position: relative;
+                  line-height: 16px;
+                }
+
+              }
+
+              span {
+                color: #666;
+              }
+            }
+
+          }
+
+          .b-price-box {
+            .b-coupon {
+              color: #e83427;
+            }
+
+            .b-price {
+              display: flex;
+              gap: 20px;
+
+              .sale {
+                strong {
+                  font-size: 20px;
+                }
+              }
+
+              .cost {                
+                color: #666;
+                font-weight: 300;
+                position: relative;
+
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #e83427;
+                  position: absolute;
+                  top: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/* 고정 */
+.best-right .best-fix {
+  /* background-color: #ffbf00; */
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 220px;
+  gap: 10px;
+  align-items: end;
+  width: 300px;
+  z-index: 10;
+
+  h3 {
+    color: #e83427;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 90px;
+    height: 95px;
+  }
+}
+
+.best-right .wh-fix {  
+
+  div {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    opacity: 0.7;
+    z-index: 10;
+  }
+
+  .top {
+    border-bottom: 1.8px solid #aaa;
+    top:0;
+  }
+
+  .bottom {
+    border-top: 1.8px solid #aaa;
+    bottom:0;
+  }
+}

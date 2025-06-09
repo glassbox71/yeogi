@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여기어때 추천 여챙지</title>
+  <link rel="shortcut icon" href="./images/favicon_png_32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/sub-header,footer.css">
+  <link rel="stylesheet" href="./css/희원-서브.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <script src="./js/sub.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <h1 class="logo"><a href="index.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+      <div class="gnb-srch-wrap">
+        <div class="country-btn">
+          <button class="active">국내</button>
+          <button>해외</button>
+        </div>
+        <form name="search">
+          <div class="place">
+            <label for="place"><img src="./images/icon-srch-999.png" alt=""></label>
+            <input id="place" type="text" placeholder="여행지/숙소 검색" required>
+          </div>
+          <div class="date">
+            <input id="from" type="text" name="from" class="date-from">
+            ~
+            <input id="to" type="text" name="to" class="date-to">
+          </div>
+          <div class="personnel">
+            <label for="personnel">인원</label>
+            <!-- <input id="personnel" type="text" placeholder="2" required> -->
+            <input id="personnel" type="text" required value="0">
+            <div class="person-count">
+              <a href="#" class="plus">+</a>
+              <a href="#" class="minus">-</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="gnb-icon-wrap">
+        <div class="user-name">
+          <span>여행어때</span>님
+          <a href="#" class="user"></a>
+        </div>
+        <div class="ham-menu-wrap">
+          <div class="ham-close"><a href="#"></a></div>
+          <ul class="ham-menu-list">
+            <li class="my-menu">
+              <div class="my-page">
+                <a href="#">
+                  <div class="icon-user"></div>
+                  <p>마이페이지</p>
+                </a>
+              </div>
+              <div class="heart">
+                <a href="#">
+                  <div class="icon-heart"></div>
+                  <p>찜한 숙소</p>
+                </a>
+              </div>
+              <div class="contact">
+                <a href="#">
+                  <div class="icon-contact"></div>
+                  <p>고객 센터</p>
+                </a>
+              </div>              
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>추천여행지</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">국내여행지</a></li>
+                <li><a href="#">해외여행지</a></li>
+                <li><a href="#">인기여행기</a></li>
+              </ul>
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>항공</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">국내 편</a></li>
+                <li><a href="#">해외 편</a></li>
+                <li><a href="#">항공 + 숙소</a></li>
+              </ul>
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>숙소</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">국내숙소</a></li>
+                <li><a href="#">해외숙소</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>문화생활어때</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">공간대여</a></li>
+                <li><a href="#">레저티켓</a></li>
+                <li><a href="#">렌트카</a></li>
+              </ul>
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>예약</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">마이 예약</a></li>
+                <li><a href="#">비회원예약조회</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li class="ham-menu">
+              <a href="#">
+                <strong>소식</strong>
+                <img src="./images/icon-ham-arrow.png" alt="">
+              </a>
+              <ul class="ham-sub">
+                <li><a href="#">공지 </a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="rec-main-wrap">
+      <!-- <div class="rec-main-slide"></div> -->
+      <div class="rec-inner">
+        <div class="rec-slide">
+          <h2 class="blind">메인슬라이드</h2>
+          <div class="slide-img-wrap swiper">
+            <ul class="img-wrap swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/rec-sub-main1.png" alt="1">
+                  <p class="t-title">휴식과 힐링을<br>동시에</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/rec-sub-main2.png" alt="2">
+                  <p class="t-title">테마별 추천<br>글랠핑 / 카라반</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./images/rec-sub-main3.png" alt="3">
+                  <p class="t-title">감성넘치는 글램핑은<br>여기어때?</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="banner-container-wrap">
+      <div class="inner">
+        <div class="banner-container">
+          <div class="banner-button glamping">
+            <img src="./images/icon-glamping.png" alt="감성 글램핑 아이콘">
+            <div class="text">
+              <span>감성 글램핑</span>
+              <small>지금 떠나보세요!</small>
+            </div>
+          </div>
+
+          <div class="banner-button caravan">
+            <img src="./images/icon-forest.png" alt="카라반 여행 아이콘">
+            <div class="text">
+              <span>카라반 여행</span>
+              <small>자연과 함께하는 힐링</small>
+            </div>
+          </div>
+
+          <div class="banner-button timer">
+            <img src="./images/icon-timer.png" alt="평일 캠핑 특가 아이콘">
+            <div class="text">
+              <span>캠핑 특가</span>
+              <small>동반인 2명까지 추가 할인</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="banner-wrap swiper">
+      <ul class="banner-img-wrap swiper-wrapper">
+        <li class="swiper-slide slide1">
+          <a href="#">
+            <img src="./images/banner-sub-1.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide slide2">
+          <a href="#">
+            <img src="./images/banner-sub-2.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide slide3">
+          <a href="#">
+            <img src="./images/banner-sub-3.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide  slide4">
+          <a href="#">
+            <img src="./images/banner-sub-4.png" alt="1">
+          </a>
+        </li>
+      </ul>
+    </div> -->
+    <div class="rec-hotels-wrap">
+      <div class="inner">
+        <div class="hotels-list">
+          <ul>
+            <li class="active"><a href="#">전체</a></li>
+            <li><a href="#">글램핑</a></li>
+            <li><a href="#">카라반</a></li>
+            <li><a href="#">캠핑</a></li>
+          </ul>
+        </div>
+        <div class="best-rec">
+          <div class="rec-pair">
+            <ul class="rec-list">
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping 1.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">가평 그라티아 글램핑</p>
+                      <p class="site"><span>가평군</span> · 두밀리낚시터 차량 2분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.7</p>
+                        </div>
+                        <span>618명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>121,260</strong>원</p>
+                        <p class="cost">129,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping2.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">청포대썬셋카라반</p>
+                      <p class="site"><span>채안군</span> · 안면암 차량 19분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.8</p>
+                        </div>
+                        <span>500명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>83,660</strong>원</p>
+                        <p class="cost">89,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping3.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">다온 카라반&글램핑</p>
+                      <p class="site"><span>서산시</span> · 웅도 차량 10분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.5</p>
+                        </div>
+                        <span>407명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>119,000</strong>원</p>
+                        <p class="cost">100,674원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping4.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">에코이글루 글램핑</p>
+                      <p class="site"><span>양평군</span> · 외갓집체험마을 차량 4분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.5</p>
+                        </div>
+                        <span>108명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>130,284</strong>원</p>
+                        <p class="cost">165,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping5.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">부산 더무빙카라반</p>
+                      <p class="site"><span>기장군</span> · 월내역 도보 10분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.3</p>
+                        </div>
+                        <span>690명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>52,640</strong>원</p>
+                        <p class="cost">56,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping6.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">가평 오하브 글램핑 </p>
+                      <p class="site"><span>가평군</span> · 명지계곡 차량 12분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.7</p>
+                        </div>
+                        <span>243명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>154,160</strong>원</p>
+                        <p class="cost">205,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping7.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">포천 글램파크 캠핑장</p>
+                      <p class="site"><span>포천시</span> · 산정호수 차량 22분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.6</p>
+                        </div>
+                        <span>96명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>209,000</strong>원</p>
+                        <p class="cost">210,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping8.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">영흥도 온더비치풀빌라&글램핑</p>
+                      <p class="site"><span>옹진군</span> · 영흥도 차량 5분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">9.8</p>
+                        </div>
+                        <span>98명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>268,050</strong>원</p>
+                        <p class="cost">271,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="rec-grid">
+                <a href="#">
+                  <div class="big-img">
+                    <img src="./images/detail-sub-glamping9.png" alt="가평 그라티아 글램핑">
+                  </div>
+                  <div class="best-text">
+                    <div class="b-name">
+                      <p class="b-title">가평 무딜노천스파글램핑</p>
+                      <p class="site"><span>가평군</span> · 자라섬 차량 13분</p>
+                      <div class="grade">
+                        <div class="star">
+                          <p class="star-img"></p>
+                          <p class="score">10</p>
+                        </div>
+                        <span>261명 평가</span>
+                      </div>
+                    </div>
+                    <div class="b-price-box">
+                      <p class="b-coupon">쿠폰적용시</p>
+                      <div class="b-price">
+                        <p class="sale"><strong>262,260</strong>원</p>
+                        <p class="cost">310,000원</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>     
+    </div>
+
+    <div class="banner-wrap swiper">
+      <ul class="banner-img-wrap swiper-wrapper">
+        <li class="swiper-slide slide1">
+          <a href="#">
+            <img src="./images/banner-sub-1.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide slide2">
+          <a href="#">
+            <img src="./images/banner-sub-2.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide slide3">
+          <a href="#">
+            <img src="./images/banner-sub-3.png" alt="1">
+          </a>
+        </li>
+        <li class="swiper-slide  slide4">
+          <a href="#">
+            <img src="./images/banner-sub-4.png" alt="1">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="ft-top">
+      <div class="inner">
+        <ul class="ft-menu">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">소비자 분재해결 기준</a></li>
+          <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+        </ul>
+        <div class="service-site">
+          <ul class="list-box">
+            <li>
+              <p><strong>회사</strong></p>
+              <p><a href="#">회사소개</a></p>
+            </li>
+            <li>
+              <p><strong>혜택</strong></p>
+              <p><a href="#">엘리트 멤버십</a></p>
+              <p><a href="#">트립홀릭</a></p>
+            </li>
+            <li>
+              <p><strong>서비스</strong></p>
+              <p><a href="#">공지사항</a></p>
+              <p><a href="#">자주 묻는 질문</a></p>
+              <p><a href="#">기업출장/<br>복지 서비스 문의</a></p>
+            </li>
+          </ul>
+
+          <a href="#" class="service-box">
+            <strong>여기어때 서비스</strong>
+            <img src="./images/ft-site-map-btn.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="ft-bottom">
+      <div class="inner">
+        <div class="ft-left">
+          <p class="ft-logo"><img src="./images/footer-logo.svg" alt=""></p>
+          <address>
+            <p>(주)여기어때컴퍼니</p>
+            <p>서울특별시 강남구 봉은사로 479, 479타워 11층</p>
+          </address>
+          <ul class="customer-service">
+            <li>
+              <a href="#">
+                <img src="./images/icon-call-ft.png" alt="">
+                <p><strong>1670-6250</strong></p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-chat-ft.png" alt="">
+                <p><strong>카카오톡 문의</strong></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ft-right">
+          <p class="copy">Copyright GC COMPANY Corp. All rights reserved.</p>
+          <ul class="sns-list">
+            <li><img src="./images/icon-instagram.png" alt="instagram"></li>
+            <li><img src="./images/icon-youtube.png" alt="youtube"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    let swiper = new Swiper(".slide-img-wrap", {
+      // 기본은 좌우 슬라이드 효과 변경
+      effect: "fade",
+      // 롤링이 되도록
+      loop: true,
+      // 자동실행
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    })
+    let swiper2 = new Swiper(".banner-wrap", {
+     
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+    })
+
+  </script>
+</body>
+
+</html>

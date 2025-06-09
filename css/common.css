@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;  
+}
+
+li{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+    color:#3d3d3d;
+}
+
+img, video{
+    vertical-align: middle;
+    max-width: 100%;    
+}
+address, em, i {
+    font-style:normal;    
+}
+
+.blind {
+    position: absolute;
+    top:-99999px;
+}
+body{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+h2{
+    font-family: 'JalnanGothic';
+    font-size: 50px;
+}
+h3{
+    font-family: 'JalnanGothic';
+    font-size: 40px;
+}

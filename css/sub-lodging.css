@@ -1,0 +1,581 @@
+/* sub-공통 */
+h2 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 28px;
+  color: #222;
+}
+
+h3 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 24px;
+  color: #222;
+}
+
+.title-20 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* 더보기 버튼*/
+.link-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.blue-link {
+  color: #1D8BFF;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 오른쪽 화살표 */
+.lo-arrow-right {
+  width: 9px;
+  height: 15px;
+  object-fit: cover;
+}
+
+/* 사진더보기 버튼 */
+.more-img-btn {
+  a {
+    cursor: pointer;
+    display: block;
+    padding: 6px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+
+    >img {
+      width: 14px;
+      height: 14px;
+      object-fit: cover;
+      padding-bottom: 1.5px;
+    }
+
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+
+
+
+/* 메인 */
+#lodging-main {
+  height: 100vh;
+}
+
+.main-img-wrap {
+  /* background-color: aqua; */
+  padding-top: 130px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+
+  >img {
+    border-radius: 20px;
+    width: 700px;
+    height: 500px;
+  }
+
+  .lo-main-slide {
+    width: 800px;
+    height: 500px;
+  }
+
+  .more-img-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+
+    a {
+      background-color: #e83427;
+    }
+  }
+}
+
+.main-title-wrap {
+  margin-top: 24px;
+  padding: 0 16px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  .lo-title {
+    >p {
+      display: flex;
+      gap: 7px
+    }
+  }
+
+  .lo-price {
+    display: flex;
+    gap: 13px;
+
+    h2>span {
+      font-weight: 400;
+    }
+
+    button {
+      width: 25px;
+      height: 25px;
+      background-image: url(../images/icon-heart.png);
+      margin-top: 5px;
+    }
+
+    button.active {
+      background-image: url(../images/icon-heart-fill.png);
+    }
+  }
+}
+
+.main-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .grade {
+    width: 400px;
+
+    a {
+      .grade-title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .star {
+          display: flex;
+          gap: 1px;
+          background-color: #ffbf00;
+          border-radius: 20px;
+          padding: 4px 8px;
+          align-items: center;
+
+          .star-img {
+            width: 16px;
+            height: 16px;
+            background-image: url(../images/icon-star.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          .score {
+            font-weight: 700;
+            position: relative;
+            line-height: 16px;
+          }
+        }
+
+      }
+
+      >p {
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        /* word-break: keep-all; */
+        font-weight: 300;
+        margin-top: 20px;
+        line-height: 1.4em;
+      }
+    }
+  }
+
+  .place {
+    .place-title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .address {
+      margin-top: 20px;
+
+      li {
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .facility {
+    .facility-title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .facility-list {
+      width: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+
+      li {
+        width: 92px;
+        margin-right: 20px;
+
+        img {
+          margin-right: 4px;
+        }
+      }
+
+    }
+  }
+}
+
+/* 내용*/
+#lodging-content {
+  margin-top: 60px;
+}
+
+.lo-nav-wrap {
+  border-bottom: 2px solid #ccc;
+  position: relative;
+
+  .lo-nav {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    li {
+      a {
+        display: block;
+        padding: 14px 20px;    
+      }
+
+      a.active {
+        color: #1D8BFF;
+        border-bottom: 2px solid #1D8BFF;   
+        transition: color 0.3s ease;    
+      }
+    }
+  }
+}
+
+.lo-content-wrap {
+  display: flex;
+  /* gap: 40px; */
+  justify-content: space-between;
+}
+
+/* 왼쪽 내용 */
+.lo-left {
+  width: 70%;
+  padding-top: 45px;
+  /* background-color: aquamarine; */
+}
+
+.editor-box {
+  .ed-title {
+    display: flex;
+    gap: 25px;
+
+    img {
+      width: 60px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ed-title-box {
+      h3 {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .ed-img {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    li {
+      width: 340px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 5px 2px #ddd;
+
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      p {
+        font-weight: 700;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.room-box {
+  margin-top: 90px;
+
+  .room-list {
+    padding-top: 30px;
+
+    li {
+      background-color: #F2FAFF;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      margin-bottom: 40px;
+      border-radius: 30px;
+
+      .room-img-box {
+        position: relative;
+        /* background-color: pink; */
+        width: 30%;
+
+        >img {
+          width: 100%;
+          height: 247px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        .more-img-btn {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+      }
+
+      .room-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 65%;
+        /* background-color: #ffbf00; */
+
+        .room-title-box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          height: 40%;
+
+          .room-name {
+            width: 80%;
+          }
+
+          .room-info-btn {
+            /* background-color: pink;  */
+            display: flex;
+            align-items: end;
+          }
+        }
+
+        .room-wh-box {
+          display: flex;
+          justify-content: space-between;
+
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 20px;
+          font-size: 14px;
+
+          .check-text {
+            color: #666;
+
+            .time {
+              span {
+                margin-right: 10px;
+              }
+            }
+
+            .room-info {
+              margin-top: 30px;
+              display: flex;
+              gap: 5px;
+              line-height: 18px;
+
+              .info-title {
+                display: flex;
+                flex-direction: column;
+                vertical-align: top;
+                width: 70px;
+
+                p {
+                  margin-top: 8px;
+                }
+              }
+
+              .info-text {
+                vertical-align: top;
+                width: 300px;
+
+                p {
+                  margin-top: 8px;
+                }
+              }
+            }
+          }
+
+          .price-text {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .room-price {
+              position: relative;
+
+              .cost {
+                color: #aaa;
+                font-weight: 300;
+                position: absolute;
+                top: 5px;
+                left: -85px;
+
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #aaa;
+                  position: absolute;
+                  top: 8px;
+                }
+              }
+
+              .title-20 {
+                span {
+                  font-weight: 400;
+                }
+              }
+
+              .remaining {
+                padding-top: 2px;
+                color: #e83427;                
+              }
+            }
+
+            .rsrv-btn {
+              a {
+                display: inline-block;
+                background-color: #1D8BFF;
+                padding: 12px 18px;
+                color: #fff;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 오른쪽 내용 */
+.lo-right {
+  width: 23%;
+  /* background-color: salmon; */
+}
+
+.lo-fix-wrap {
+  padding-top: 45px;
+
+  .coupon {
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #C6DFF9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+    .title-20>span {
+      color: #1D8BFF;
+      padding: 0 5px;
+    }
+
+    .coupon-down-btn {
+      padding: 8px 12px;
+      background: linear-gradient(135deg, #24b6ff 0%, #cc00ff 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      border-radius: 50px;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  .pay {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #C6DFF9;
+
+    .title-20 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tosspay {
+      padding-top: 20px;
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .pay-text>li {
+      /* 한줄말줄임 */
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+  }
+
+  .event-banner {
+    margin-top: 30px;
+
+    ul>li {
+      padding-bottom: 40px;
+
+      a {
+        background-color: #EAF6FF;
+        padding: 25px 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;        
+        align-items: center;
+
+        .event-text-box {
+          /* background-color: pink; */
+          width: 180px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .sub-title {
+            font-size: 0.85em;
+          }
+
+          .j-20 {
+            font-family: 'JalnanGothic';
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

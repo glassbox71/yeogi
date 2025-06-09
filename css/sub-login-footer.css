@@ -1,0 +1,301 @@
+/* 공통 */
+.inner {
+  /* background-color: rgba(255, 0, 0, 0.2); */
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+input {
+  border: 0;
+  outline: none;  
+  color: #3d3d3d;
+  cursor: pointer; 
+  text-align: center;  
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+
+/* section은 임시 - 변경해주세요*/
+/* section {
+  height: 100vh;
+  background-color: skyblue;
+} */
+
+
+/* 서브헤더 */
+/* header {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+
+  .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      height: 100px;
+      line-height: 100px;
+
+      >img {
+        width: 130px;
+      }
+    } */
+
+    /* 검색창 */    
+    /* .gnb-srch-wrap {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .country-btn {
+        > button {
+          color: #aaa;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .active {
+          color: #e83427;
+        }
+      }
+
+      form {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        p {
+          background-color: white;
+          padding: 16px 26px;
+          border: 1px solid #aaa;
+          border-radius: 20px;
+          box-shadow: 0px 0px 5px 2px #e9e9e9;
+
+          input {
+            font-size: 16px;
+          }
+        }
+
+        .place {
+          label {
+            img {
+              width: 20px;
+              height: 21px;
+            }
+          }
+
+          input {
+            width: 150px;
+          }
+        }
+
+        .date {
+          input {
+            width: 100px;
+          }
+        }
+
+        .personnel {
+          input {
+            width: 30px;
+          }
+        }
+      }
+    }
+
+    .gnb-icon-wrap {
+      display: flex;
+      gap: 10px;
+
+      .user-name {
+        color: #e83427;
+      }
+
+      .gnb-icon {
+        display: flex;
+        gap: 10px;
+
+        li {
+          width: 25px;
+          height: 25px;
+
+          a {
+            display: block;
+          }
+
+          .user {
+            background-image: url(../images/icon-user-fill.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+          }
+
+          .heart {
+            background-image: url(../images/icon-heart.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+          }
+
+          .contact {
+            background-image: url(../images/icon-contact.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+    }
+  }
+
+} */
+
+
+/* 서브푸터 */
+footer {
+  margin-top: 33px;
+  max-width: 100vw;
+  height: 400px;
+  background-color: #eee;
+  color: #666;
+  font-size: 14px;
+
+  .ft-top {
+    border-bottom: 1px solid #aaa;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      align-items: center;
+    }
+
+    .ft-menu {
+      display: flex;
+      gap: 40px;
+
+      li>a {
+        font-weight: 600;
+        color: #666;
+      }
+    }
+
+    /* 사이트맵 */
+    .service-site {
+      position: relative;
+      background-color: #d9d9d9;
+
+      /* .list-box.active{
+        display: block;
+      } */
+      .list-box {
+        display: none;
+        position: absolute;
+        bottom: 48px;
+        left: 0;
+        background-color: white;
+        border: 1px solid #d9d9d9;
+        width: 100%;
+        padding: 20px 30px;
+
+        li {
+          padding-bottom: 20px;
+
+          >p {
+            color: #666;
+            padding: 5px 0;
+
+            a {
+              color: #666;
+              line-height: 1.3em;
+            }
+          }
+        }
+      }
+      .list-box.active{
+        display: block;
+      }
+
+      /* 여기어때 서비스 */
+      .service-box{
+        display: block;
+        padding: 16px 20px;
+        color: #666;
+
+        strong {
+          margin-right: 40px;
+        }
+        img.active{
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+  }
+
+  .ft-bottom {
+    .inner {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 30px 0;
+
+      .ft-left {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .ft-logo {
+          img {
+            width: 182px;
+            height: 30px;
+          }
+        }
+
+        address>p {
+          margin-bottom: 8px;
+        }
+
+        .customer-service {
+          padding-top: 20px;
+          display: flex;
+          gap: 20px;
+
+          li {
+            >a {
+              display: flex;
+              gap: 10px;
+              padding: 16px 20px;
+              border: 1px solid #aaa;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+
+      .ft-right {
+        display: flex;
+        gap: 30px;
+        align-items: end;
+
+        .sns-list {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

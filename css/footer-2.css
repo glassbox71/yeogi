@@ -1,0 +1,139 @@
+footer {
+    background-image: url(../images/footer-bg-pc.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+
+    .ft-title-wrap {
+        /* background-color: pink; */
+        display: flex;
+        color: white;
+        gap: 20px;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+    }
+
+}
+
+.footer-bottom-wrap {
+    background-image: url(../images/footer-bg.png);
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+
+
+    .son-wrap {
+        width: 28%;
+
+        img {
+            width: 560px;
+            height: 100%;
+        }
+    }
+}
+
+
+.ft-text {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 10px;
+    left: 47%;
+    text-align: left;
+}
+
+.ft-info {
+    margin-right: 70px;
+    color: #666;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    .ft-top {
+        line-height: 1.4em;
+    }
+
+    .ft-bottom {
+        /* 왼쪽 정렬 */
+        justify-content: flex-start;
+
+        ul {
+            display: flex;
+            gap: 30px;
+
+            li>a {
+                color: #666;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    .ft-copy {
+        display: flex;
+        justify-content: space-between;
+
+        .sns-list {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+.helpdesk {
+    padding-bottom: 20px;
+
+    .img-container {
+        display: flex;
+        gap: 30px;
+
+        .img-box {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+            height: 280px;
+            background-image: url(../images/footer-window-bg.png);
+
+            .text-box {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .list-title {
+                    font-family: 'JalnanGothic';
+                    font: 18px;
+                }
+
+                .text {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+
+                .time {
+                    font-size: 14px;
+                }
+
+                .kind {
+                    margin: 0 auto;
+                    background-color: white;
+                    width: 64%;
+                    padding: 10px 15px;
+                    font-size: 14px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+}

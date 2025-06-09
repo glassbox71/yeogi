@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여기어때 로그인/회원가입</title>
+    <link rel="shortcut icon" href="./images/favicon_png_32.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header-sub-login.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/sub-login.css">
+    <link rel="stylesheet" href="./css/sub-login-footer.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sub-login-res.js"></script>
+</head>
+
+<body>
+    <header class="font-black">
+        <div class="inner">
+            <div class="main-menu-wrap">
+                <h1 class="logo"><a href="./index.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+                <ul class="main-menu-list">
+                    <li>
+                        <!-- 캐리어 이미지 css에서 ::before{background-image : url()로 적용예정} -->
+                        <a href="./hw-sub.html">추천여행지</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="./hw-sub.html">국내여행지</a></li>
+                            <li><a href="./hw-sub.html">해외여행지</a></li>
+                            <li><a href="./hw-sub.html">인기여행기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">항공</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="#">국내 편</a></li>
+                            <li><a href="#">해외 편</a></li>
+                            <li><a href="#">항공 + 숙소</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub-lodging.html">숙소</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="./sub-lodging.html">국내숙소</a></li>
+                            <li><a href="./sub-lodging.html">해외숙소</a></li>
+                            <li><a href="./sub-lodging.html"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">문화생활어때</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="#">공간대여</a></li>
+                            <li><a href="#">레저티켓</a></li>
+                            <li><a href="#">렌트카</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub-reserve.html">예약</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="./sub-reserve.html">마이 예약</a></li>
+                            <li><a href="./sub-reserve.html">비회원예약조회</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소식</a>
+                        <ul class="sub-menu-list">
+                            <li><a href="#">공지 </a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="gnb-icon-wrap">
+                    <ul class="gnb-icon">
+                        <!-- blind css 적용시 position:absolute top: -99999px로 텍스트 숨기기 -->
+                        <li><a href="./sub-login.html" class="user"></a></li>
+                        <li><a href="#" class="heart"></a></li>
+                        <li><a href="#" class="contact"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="sub-login-wrap">        
+        <div class="son-img-wrap">
+            
+        </div>
+        <div class="sub-login">
+            <div class="login-wrap">
+                <div class="sub-logo"><img src="./images/login-sub/sub-logo.svg" alt=""></div>
+                <ul class="login">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            <ul class="login-btn">
+                <li>
+                    <a href="#" class="kakao">
+                        <p class="icon"><img src="./images/login-sub/kakao-icon.svg" alt="카카오로 시작하기"></p>
+                        <p class="text">카카오로 시작하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="naver">
+                        <p class="icon"><img src="./images/login-sub/naver-icon.svg" alt="네이버로 시작하기"></p>
+                        <p class="text">네이버로 시작하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="apple">
+                        <p class="icon"><img src="./images/login-sub/apple-icon.svg" alt="Apple로 시작하기"></p>
+                        <p class="text">Apple로 시작하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="facebook">
+                        <p class="icon"><img src="./images/login-sub/facebook.svg" alt="페이스북으로 시작하기"></p>
+                        <p class="text">페이스북으로 시작하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="google">
+                        <p class="icon"><img src="./images/login-sub/google-icon.svg" alt="구글로 시작하기"></p>
+                        <p class="text">구글로 시작하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mail">
+                        <p class="icon"><img src="./images/login-sub/e-mail-icon.svg" alt="이메일로 시작하기"></p>
+                        <p class="text">이메일로 시작하기</p>
+                    </a>
+                </li>
+            </ul>
+            <p class="business"><a href="#">비즈니스 로그인/회원가입</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="ft-top">
+          <div class="inner">
+            <ul class="ft-menu">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">소비자 분재해결 기준</a></li>
+              <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+            </ul>
+            <div class="service-site">
+              <ul class="list-box">
+                <li>
+                  <p><strong>회사</strong></p>
+                  <p><a href="#">회사소개</a></p>
+                </li>
+                <li>
+                  <p><strong>혜택</strong></p>
+                  <p><a href="#">엘리트 멤버십</a></p>
+                  <p><a href="#">트립홀릭</a></p>
+                </li>
+                <li>
+                  <p><strong>서비스</strong></p>
+                  <p><a href="#">공지사항</a></p>
+                  <p><a href="#">자주 묻는 질문</a></p>
+                  <p><a href="#">기업출장/<br>복지 서비스 문의</a></p>
+                </li>
+              </ul>
+    
+              <a href="#" class="service-box">
+                <strong>여기어때 서비스</strong>
+                <img src="./images/ft-site-map-btn.png" alt="">
+              </a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="ft-bottom">
+          <div class="inner">
+            <div class="ft-left">
+              <p class="ft-logo"><img src="./images/footer-logo.svg" alt=""></p>
+              <address>
+                <p>(주)여기어때컴퍼니</p>
+                <p>서울특별시 강남구 봉은사로 479, 479타워 11층</p>
+              </address>
+              <ul class="customer-service">
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-call-ft.png" alt="고객센터 전화번호">
+                    <p><strong>1670-6250</strong></p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/icon-chat-ft.png" alt="카카오톡 문의">
+                    <p><strong>카카오톡 문의</strong></p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-right">
+              <p class="copy">Copyright GC COMPANY Corp. All rights reserved.</p>
+              <ul class="sns-list">
+                <li><img src="./images/icon-instagram.png" alt="instagram"></li>
+                <li><img src="./images/icon-youtube.png" alt="youtube"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+</body>
+
+</html>

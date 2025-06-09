@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여기어때 예약페이지</title>
+    <link rel="shortcut icon" href="./images/favicon_png_32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/sub-header,footer1.css">
+    <link rel="stylesheet" href="./css/sub-reserve.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sub-login-res.js"></script>
+</head>
+
+<body>
+    <header class="font-black">
+        <div class="inner">
+            
+                <h1 class="logo"><a href="./index.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+                <p>예약</p>
+                <div class="gnb-icon-wrap">
+                    <div class="user-name">
+                      <p><span>여행어때</span>님</p>
+                      <a href="./sub-login.html" class="user"></a>
+                    </div>
+                    <div class="ham-menu-wrap">
+                      <div class="ham-close"><a href="#"></a></div>
+                      <ul class="ham-menu-list">
+                        <li class="my-menu">
+                          <div class="my-page">
+                            <a href="#">
+                              <div class="icon-user"></div>
+                              <p>마이페이지</p>
+                            </a>
+                          </div>
+                          <div class="heart">
+                            <a href="#">
+                              <div class="icon-heart"></div>
+                              <p>찜한 숙소</p>
+                            </a>
+                          </div>
+                          <div class="contact">
+                            <a href="#">
+                              <div class="icon-contact"></div>
+                              <p>고객 센터</p>
+                            </a>
+                          </div>              
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>추천여행지</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">국내여행지</a></li>
+                            <li><a href="#">해외여행지</a></li>
+                            <li><a href="#">인기여행기</a></li>
+                          </ul>
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>항공</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">국내 편</a></li>
+                            <li><a href="#">해외 편</a></li>
+                            <li><a href="#">항공 + 숙소</a></li>
+                          </ul>
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>숙소</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">국내숙소</a></li>
+                            <li><a href="#">해외숙소</a></li>
+                            <li><a href="#"></a></li>
+                          </ul>
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>문화생활어때</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">공간대여</a></li>
+                            <li><a href="#">레저티켓</a></li>
+                            <li><a href="#">렌트카</a></li>
+                          </ul>
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>예약</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">마이 예약</a></li>
+                            <li><a href="#">비회원예약조회</a></li>
+                            <li><a href="#"></a></li>
+                          </ul>
+                        </li>
+                        <li class="ham-menu">
+                          <a href="#">
+                            <strong>소식</strong>
+                            <img src="./images/icon-ham-arrow.png" alt="">
+                          </a>
+                          <ul class="ham-sub">
+                            <li><a href="#">공지 </a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">FAQ</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            
+        </div>
+    </header>
+    <main>
+
+        <section id="reserve-wrap">
+            <h2 class="blind">섹션1</h2>
+            <div class="inner">
+                <div class="reserve-box-wrap">
+                    <p class="res-title">국내부터 해외까지 여행할때 <span>여기어때</span></p>
+                    <div class="gnb-srch-wrap">
+                        <div class="country-btn">
+                            <button class="active">국내</button>
+                            <button>해외</button>
+                        </div>
+                        <form name="search">
+                            <div class="place">
+                                <p>
+                                    <label for="place"><img src="./images/sub-reserveimg/reserve-srch.png"
+                                            alt="place"></label>
+                                    <input id="place" type="text" placeholder="여행지나 숙소를 검색해 보세요" required>
+                                </p>
+                            </div>
+                            <div class="date">
+                                <p>
+                                    <label for="res-date"><img src="./images/sub-reserveimg/reserve-date.png"
+                                            alt="date"></label>
+                                    <input id="from" type="text" name="from" class="date-from">
+                                    ~
+                                    <input id="to" type="text" name="to" class="date-to">
+                                </p>
+                            </div>
+                            <div class="res-user-wrap">
+                                <p>
+                                    <label for="res-user"><img src="./images/sub-reserveimg/reserve-user.png"
+                                            alt="res-user"></label>
+                                    <span>인원</span>
+                                    <input id="personnel" type="text" required value="0">
+                                    <div class="person-count">
+                                      <a href="#" class="plus">+</a>
+                                      <a href="#" class="minus">-</a>
+                                    </div>                                    
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="swiper-container event-slide-wrap">
+                    <div class="event-title"><span>여기어때</span>이벤트</div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/sub-reserveimg/res-slide01.png"></img></div>
+                        <div class="swiper-slide"><img src="./images/sub-reserveimg/res-slide02.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/sub-reserveimg/res-slide03.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./images/sub-reserveimg/res-slide04.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section id="shorts-slide-wrap">
+            <h2 class="blind">섹션2</h2>
+            <div class="inner">
+                <div class="shorts-title"><span>여기어때</span> Shots 여행</div>
+                <div class="swiper-container shorts-slide-list">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-01.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">지금 호주는 가을날씨</p>
+                                <p class="text-box">시드니 본다이비치 아이스버그 수영장<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-02.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">마카오 여행</p>
+                                <p class="text-box">지금 제일 핫한 포토 스팟은<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-03.mp4">
+                            </video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">미국 휴양지 추천!</p>
+                                <p class="text-box">괌&하와이 해변 BSET6 🏝️🏊<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-04.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">일본 도쿄 벚꽃 명소 BEST3</p>
+                                <p class="text-box">나카메구로, 신주쿠교엔, 치도리가후치<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-05.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">강화 무무펜션</p>
+                                <p class="text-box">자연 속 스파를 즐기고 싶을 때, 강화도 스파 펜션 추천<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-06.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">랜선 방구석</p>
+                                <p class="text-box">일출여행🌅 #영금정 #일출 #타임랩스<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-07.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">마음까지 따뜻해지는</p>
+                                <p class="text-box">국내 스파 숙소 추천🛀<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-08.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">지금, 동해 #1</p>
+                                <p class="text-box">#양양남애항 #남애항 #양양여행 #양양 #강원도여행 #여기어때 #도망가자<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-09.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">지금, 동해 #2</p>
+                                <p class="text-box">#썬크루즈호텔 #펜트하우스 #썬크루즈펜트하우스 #동해여행 #호텔펜트하우스 #뷰맛집 #여기어때
+                                    #도망가자<span>2,550,600원~</span></p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide"><video autoplay muted loop
+                                src="./images/sub-reserveimg/movie/sub-shorts-10.mp4"></video>
+                            <div class="text-box">
+                                <p class="top-text">5.2천</p>
+                                <p class="title-box">지금, 동해 #3</p>
+                                <p class="text-box"> #추암촛대바위 #추암촛대바위드론 #동해드론 #드론촬영 #여기어때 #도망가자<span>2,550,600원~</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="arrow-btn-l"></div>
+                <div class="arrow-btn-r"></div>
+            </div>
+        </section>
+        <div class="banner-wrap">
+            <div class="banner-title">지금은 <span>여기어때.</span>투어 추천할때</div>
+            <div class="banner-img"><img src="./images/sub-reserveimg/banner.svg" alt=""></div>
+        </div>
+        <section id="last-slide-wrap">
+            <h2 class="blind">섹션3</h2>
+            <div class="inner">
+                <div class="winter-title-wrap">
+                    <p class="win-title">올겨울 해외갈때 <span>여기어때</span></p>
+                    <p class="win-text">🌎🎵 (ft.장기하, 민니, 이용진, 마츠다, 그렉, 미초바, 파트리샤, 파비앙)</p>
+                </div>
+                <div class="swiper-container last-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><video
+                                src="./images/sub-reserveimg/movie/sub-last-01.mp4"
+                                autoplay muted loop></video>
+                        </div>
+                        <div class="swiper-slide"><video
+                                src="./images/sub-reserveimg/movie/sub-last-02.mp4"
+                                autoplay muted loop></video>
+
+                        </div>
+                        <div class="swiper-slide"><video
+                                src="./images/sub-reserveimg/movie/sub-last-03.mp4"
+                                autoplay muted loop></video>
+                        </div>
+                    </div>
+                    <div class="arr-right"></div>
+                    <div class="arr-left"></div>
+                    <div class="last-pagination"></div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="ft-top">
+            <div class="inner">
+                <ul class="ft-menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">소비자 분재해결 기준</a></li>
+                    <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+                </ul>
+                <div class="service-site">
+                    <ul class="list-box">
+                        <li>
+                            <p><strong>회사</strong></p>
+                            <p><a href="#">회사소개</a></p>
+                        </li>
+                        <li>
+                            <p><strong>혜택</strong></p>
+                            <p><a href="#">엘리트 멤버십</a></p>
+                            <p><a href="#">트립홀릭</a></p>
+                        </li>
+                        <li>
+                            <p><strong>서비스</strong></p>
+                            <p><a href="#">공지사항</a></p>
+                            <p><a href="#">자주 묻는 질문</a></p>
+                            <p><a href="#">기업출장/<br>복지 서비스 문의</a></p>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="service-box">
+                        <strong>여기어때 서비스</strong>
+                        <img src="./images/ft-site-map-btn.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="ft-bottom">
+            <div class="inner">
+                <div class="ft-left">
+                    <p class="ft-logo"><img src="./images/footer-logo.svg" alt=""></p>
+                    <address>
+                        <p>(주)여기어때컴퍼니</p>
+                        <p>서울특별시 강남구 봉은사로 479, 479타워 11층</p>
+                    </address>
+                    <ul class="customer-service">
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon-call-ft.png" alt="">
+                                <p><strong>1670-6250</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon-chat-ft.png" alt="">
+                                <p><strong>카카오톡 문의</strong></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-right">
+                    <p class="copy">Copyright GC COMPANY Corp. All rights reserved.</p>
+                    <ul class="sns-list">
+                        <li><img src="./images/icon-instagram.png" alt="instagram"></li>
+                        <li><img src="./images/icon-youtube.png" alt="youtube"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        window.onload = function () {
+            var eventSwiper = new Swiper(".event-slide-wrap", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                freeMode: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 5000,
+                },
+                rewind: true,
+            });
+            var shortsSwiper = new Swiper(".shorts-slide-list", {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".arrow-btn-r",
+                    prevEl: ".arrow-btn-l",
+                },
+                autoplay: {
+                    delay: 5000,
+                },
+                rewind: true,
+            });
+            var lastSwiper = new Swiper(".last-slide", {
+                slidesPerView: 1,                
+                loop: true,
+                grabCursor: true,
+                pagination: {
+                    el: ".last-pagination",
+                    // dynamicBullets: true,
+                    clickable: true,
+                },
+                // navigation: {
+                //     nextEl: ".arr-right",
+                //     prevEl: ".arr-left",
+                // },
+                autoplay: {
+                    delay: 8000,
+                },
+                rewind: true,
+
+            });
+        };
+    </script>
+</body>
+
+</html>
